@@ -31,7 +31,7 @@ public class Torneo {
 	}
 
 	public void registrarGol(Gol unGol) throws Exception {
-		if(this.partidos.containsValue(unGol.getIdPartido())) {
+		if(this.partidos.containsKey(unGol.getIdPartido())) {
 			
 		}else {
 			throw new Exception("Parido No Encontrado");

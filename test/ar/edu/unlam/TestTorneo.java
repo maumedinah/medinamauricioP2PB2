@@ -82,9 +82,10 @@ public class TestTorneo {
 		
 		Gol unGol = new Gol(idPartido, 9, "Local", 15);
 		
-		unTorneo.registrarGol(unGol);
+		
 		
 		unTorneo.crearPartido(idPartido, unPartido);
+		unTorneo.registrarGol(unGol);
 		assertEquals(1, unTorneo.cantidadPartidos(),0.01);
 	}
 
